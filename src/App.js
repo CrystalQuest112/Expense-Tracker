@@ -1,5 +1,5 @@
 import "./App.css";
-import Exitems from "./components/exitems";
+import ExpDisplay from "./components/ExpDisplay";
 
 function App() {
   const expenses = [
@@ -32,21 +32,9 @@ function App() {
   return (
     <div>
       <h1>Expense Tracker</h1>
-      <Exitems
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-      />
-      <Exitems
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}
-      />
-      <Exitems
-        title={expenses[2].title}
-        amount={expenses[2].amount}
-        date={expenses[2].date}
-      />
+      <div>
+        <ExpDisplay expenses={expenses} />
+      </div>
     </div>
   );
 }
