@@ -1,5 +1,6 @@
 import "./App.css";
 import ExpDisplay from "./components/ExpDisplay";
+import NewExp from "./components/NewExpense/newExp";
 
 function App() {
   const expenses = [
@@ -29,10 +30,16 @@ function App() {
     },
   ];
 
+  function addExpense(expense) {
+    console.log("inApp.js");
+    console.log(expense);
+  }
+
   return (
     <div>
       <h1>Expense Tracker</h1>
       <div>
+        <NewExp prpAddExpense={addExpense} />
         <ExpDisplay expenses={expenses} />
       </div>
     </div>

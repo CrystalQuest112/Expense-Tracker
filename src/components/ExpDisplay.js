@@ -1,8 +1,17 @@
+import React, { useState } from "react";
 import ExItems from "./ExItems";
+import FilterExp from "./FilterExp.js";
 
 function ExpDisplay(props) {
+  let [yearFilter, setYearFilter] = useState("2020");
+
+  function changeYear(selectYear) {
+    setYearFilter(selectYear);
+  }
+
   return (
-    <div className="Screen">
+    <div className="card">
+      <FilterExp selectYear={changeYear} adjust={yearFilter} />
       <ExItems
         title={props.expenses[0].title}
         amount={props.expenses[0].amount}
