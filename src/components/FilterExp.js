@@ -1,7 +1,7 @@
 import React from "react";
 import "./FilterExp.css";
 
-function FilterExp(props) {
+export default function FilterExp(props) {
   function selectNewYear(event) {
     props.selectYear(event.target.value);
   }
@@ -22,5 +22,3 @@ function FilterExp(props) {
     </div>
   );
 }
-
-export default FilterExp;

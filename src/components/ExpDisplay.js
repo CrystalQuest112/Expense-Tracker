@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ExItems from "./ExItems";
 import FilterExp from "./FilterExp.js";
 
-function ExpDisplay(props) {
+export default function ExpDisplay(props) {
   let [yearFilter, setYearFilter] = useState("2020");
 
   function changeYear(selectYear) {
@@ -35,5 +35,3 @@ function ExpDisplay(props) {
     </div>
   );
 }
-
-export default ExpDisplay;
