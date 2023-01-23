@@ -1,7 +1,7 @@
 
 .card {
   margin: 5%;
-  background-color: rgb(224, 127, 0);
+  background-color: rgba(13, 13, 12, 0.912);
   padding: 4%;
   border-radius: 20px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
@@ -15,7 +15,7 @@
   padding: 0.5rem;
   margin: 1rem 0;
   border-radius: 12px;
-  background-color: #121d48e2;
+  background-color: hsla(0, 7%, 3%, 0.886);
 }
 
 .expense-item__description {
@@ -29,7 +29,7 @@
 }
 
 .expense-item h2 {
-  color: #000000;
+  color: #fcfafa;
   font-size: 1rem;
   flex: 1;
   margin: 0 1rem;
@@ -39,7 +39,7 @@
 .expense-item__price {
   font-size: 1rem;
   font-weight: bold;
-  color: rgb(11, 28, 92);
+  color: rgb(42, 41, 41);
   background-color: #ececec;
   border: 1px solid white;
   padding: 0.5rem;

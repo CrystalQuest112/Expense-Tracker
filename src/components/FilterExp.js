@@ -5,6 +5,7 @@ export default function FilterExp(props) {
   function selectNewYear(event) {
     props.selectYear(event.target.value);
   }
+
   return (
     <div className="card">
       <div className="expenses-filter">

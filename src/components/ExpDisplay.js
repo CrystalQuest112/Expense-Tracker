@@ -12,26 +12,14 @@ export default function ExpDisplay(props) {
   return (
     <div className="card">
       <FilterExp selectYear={changeYear} adjust={yearFilter} />
-      <ExItems
-        title={props.expenses[0].title}
-        amount={props.expenses[0].amount}
-        date={props.expenses[0].date}
-      />
-      <ExItems
-        title={props.expenses[1].title}
-        amount={props.expenses[1].amount}
-        date={props.expenses[1].date}
-      />
-      <ExItems
-        title={props.expenses[2].title}
-        amount={props.expenses[2].amount}
-        date={props.expenses[2].date}
-      />
-      <ExItems
-        title={props.expenses[3].title}
-        amount={props.expenses[3].amount}
-        date={props.expenses[3].date}
-      />
+      {props.expenses.map((expense) => (
+        <ExItems
+          title={expense.title}
+          amount={expense.amount}
+          date={expense.date}
+          key={expense.id}
+        />
+      ))}{" "}
     </div>
   );
 }

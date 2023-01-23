@@ -61,6 +61,7 @@ function FormExp(props) {
           ></input>
         </div>
         <div className="new-expense__actions"></div>
+        <br />
         <button input type="submit">
           {" "}
           Add Expense
