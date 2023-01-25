@@ -8,7 +8,7 @@ const DM_EXPENSES = [
     id: "e1",
     title: "Groceries",
     amount: 407.99,
-    date: new Date(2020, 7, 14),
+    date: new Date(2019, 7, 14),
   },
   {
     id: "e2",

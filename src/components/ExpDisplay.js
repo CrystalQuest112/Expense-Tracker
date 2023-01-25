@@ -9,10 +9,13 @@ export default function ExpDisplay(props) {
     setYearFilter(selectYear);
   }
 
+  const filteredExpenses = props.expenses.filter((expense) => {
+    return expense.date.getFullYear().toString() === yearFilter;
+  });
   return (
     <div className="card">
       <FilterExp selectYear={changeYear} adjust={yearFilter} />
-      {props.expenses.map((expense) => (
+      {filteredExpenses.map((expense) => (
         <ExItems
           title={expense.title}
           amount={expense.amount}
