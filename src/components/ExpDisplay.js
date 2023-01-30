@@ -15,14 +15,18 @@ export default function ExpDisplay(props) {
   return (
     <div className="card">
       <FilterExp selectYear={changeYear} adjust={yearFilter} />
-      {filteredExpenses.map((expense) => (
-        <ExItems
-          title={expense.title}
-          amount={expense.amount}
-          date={expense.date}
-          key={expense.id}
-        />
-      ))}{" "}
+      {filteredExpenses.length === 0 ? (
+        <p>None</p>
+      ) : (
+        filteredExpenses.map((expense) => (
+          <ExItems
+            title={expense.title}
+            amount={expense.amount}
+            date={expense.date}
+            key={expense.id}
+          />
+        ))
+      )}{" "}
     </div>
   );
 }

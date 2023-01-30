@@ -66,6 +66,10 @@ function FormExp(props) {
           {" "}
           Add Expense
         </button>
+        <button type="button" onClick={props.onCancel}>
+          {" "}
+          Cancel
+        </button>
       </div>
     </form>
   );
