@@ -41,7 +41,17 @@ function App() {
 
   return (
     <div>
-      <h1>Expense Tracker</h1>
+      <h1
+        style={{
+          color: "whitesmoke",
+          backgroundColor: "black",
+          textAlign: "center",
+          margin: -1,
+          paddingBottom: 10,
+        }}
+      >
+        Expense Tracker
+      </h1>
       <div>
         <NewExp prpAddExpense={addExpense} />
         <ExpDisplay expenses={expenses} />
