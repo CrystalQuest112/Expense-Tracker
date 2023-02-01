@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ExItems from "./ExItems";
 import FilterExp from "./FilterExp.js";
+import ExpChart from "./NewExpense/ExpChart";
 
 export default function ExpDisplay(props) {
   let [yearFilter, setYearFilter] = useState("2020");
@@ -15,6 +16,7 @@ export default function ExpDisplay(props) {
   return (
     <div className="card">
       <FilterExp selectYear={changeYear} adjust={yearFilter} />
+      <ExpChart expenses={filteredExpenses} />
       {filteredExpenses.length === 0 ? (
         <p>None</p>
       ) : (

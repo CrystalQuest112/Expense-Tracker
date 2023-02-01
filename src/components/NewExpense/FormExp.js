@@ -23,7 +23,7 @@ function FormExp(props) {
 
     let expenseData = {
       title: newTitle,
-      amount: newAmount,
+      amount: +newAmount,
       date: new Date(newDate),
     };
     props.prpSavedExpData(expenseData);
