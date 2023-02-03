@@ -65,7 +65,7 @@ function FormExp(props) {
         <button input type="submit">
           {" "}
           Add Expense
-        </button>
+        </button>{" "}
         <button type="button" onClick={props.onCancel}>
           {" "}
           Cancel
