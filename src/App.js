@@ -43,8 +43,8 @@ function App() {
     <div>
       <h1
         style={{
-          color: "whitesmoke",
-          backgroundColor: "black",
+          color: "black",
+          backgroundColor: "#faf5f4",
           textAlign: "center",
           margin: -1,
           paddingBottom: 10,
