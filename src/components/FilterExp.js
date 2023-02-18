@@ -24,3 +24,5 @@ export default function FilterExp(props) {
     </div>
   );
 }
+
+/* this component selects the year and filters the expenses according to selected year .*/
